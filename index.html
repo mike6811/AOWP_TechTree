@@ -67,7 +67,7 @@
 
     font-size:12px;
     position:absolute;
-    z-index:20;
+    z-index:999999;
     display:none;
 
 }
@@ -119,9 +119,33 @@
 }
 
 
+.auto-style3 {
+	text-align: left;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 11px;
+	color: #A5C3D3;
+}
+
+
+
+
+.auto-style4 {
+	color: #083138;
+	background-color: #00FF00;
+}
+.auto-style5 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+}
+
+
+
+
 </style>
+<script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+   
 </head>
-<body bgcolor="#657b87" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<body bgcolor="#1c2b3c" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <!-- ImageReady Slices (1834052478_preview_Promethean.jpg) -->
 <!-- End ImageReady Slices -->
 <br>
@@ -130,13 +154,52 @@
 		<td class="auto-style1">Age of Wonders: Planetfall TechTree</td>
 	</tr>
 	<tr>
-		<td><span class="auto-style2">Version: WIP-Alpha-preview1</span><br class="auto-style2">
+		<td>
+		<table style="width: 100%">
+			<tr>
+				<td style="width: 450px"><span class="auto-style2">Version: WIP-Alpha-preview1</span><br class="auto-style2">
 		<span class="auto-style2">GameVersion: 1.0.0.6</span><br class="auto-style2">
 		<span class="auto-style2">last updated: 2019-08-28</span></td>
+				<td class="auto-style3" valign="top" style="width: 450px">
+				To-Do's:
+				
+				<ul>
+					<li> finish faction tree (16% done)</li>
+					<li> finish weapon tree (16% done)</li>
+					<li> finish secret tree (16% done)</li>
+					<li> cleanup, polish, add some fancyness :) (0% done)</li>
+				</ul>
+				doing now: add faction tree stuff
+				</td>
+				<td class="auto-style3" valign="top">
+				planned completion: <br>around next sunday, 2019-09-01 - depand a bit on the weather - it's summertime =)
+				<br><br>nice to have features after the 3 main tech tree's:<br>- 
+				adding the first civilian tech tree (Doctrines)<br>- adding 
+				Status Effect Overview</td>
+			
+			</tr>
+		</table>
+		</td>
 	</tr>
 </table>
 <br>
-<br><div class="auto-style1">Faction Techs</div><table id="Tabelle_2" width="4110" height="266" border="0" cellpadding="0" cellspacing="0">
+
+
+
+
+
+            
+        <span class="auto-style2"><br></span>  
+
+            
+        <span class="auto-style5"><span class="auto-style4">New Feature</span></span><span class="auto-style2"> for PC User: you can now simply drag the tree. same as inGame. Grab it 
+		&amp; Drag it! :) - but need a bit tweaking, not 100% happy with it right now<br></span><br>
+		 <div class="dragscroll" style="width: 100%; height: 1000px; overflow: auto; overflow-y: hidden;cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">  
+		<div class="auto-style1">Faction Techs</div>
+        
+         
+        <table id="Tabelle_2" width="4110" height="266" border="0" cellpadding="0" cellspacing="0">
+     
 	<tr>
 		<td colspan="30">
 			<img src="img/trees/faction_vanguard_01.png" width="4109" height="33" alt=""></td>
@@ -287,6 +350,9 @@
 
 
 <br><div class="auto-style1"><br>Weapon Techs</div>
+
+
+
 <table id="Tabelle_01" width="3949" height="88" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td colspan="16">
@@ -327,9 +393,9 @@
 			<img src="img/trees/weapon_laser_17.png" width="236" height="57" alt=""></td>
 	</tr>
 </table>
+
 <br>
 <br><div class="auto-style1"><br>Secret Techs</div>
-
 
 <table id="Tabelle_01" width="4302" height="259" border="0" cellpadding="0" cellspacing="0">
 	<tr>
@@ -473,7 +539,7 @@
 			<img src="img/trees/Abstandhalter.gif" width="1" height="59" alt=""></td>
 	</tr>
 </table>
-
+</div>
 </p>
 </body>
 </html>
