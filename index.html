@@ -148,7 +148,7 @@
    
 <script type="text/javascript">
 
- 	var divs = ["facVan", "facKir", "facDva"];
+ 	var divs = ["facVan", "facKir", "facDva", "facAma", "facSyn", "facAss"];
     var visibleDivId = null;
 	
 	function showhide() {
@@ -176,12 +176,16 @@
 				document.getElementById('faction1').style.fontWeight = 'normal';
 				document.getElementById('faction2').style.fontWeight = 'normal';
 				document.getElementById('faction3').style.fontWeight = 'normal';
-				
+				document.getElementById('faction4').style.fontWeight = 'normal';
+				document.getElementById('faction5').style.fontWeight = 'normal';
+				document.getElementById('faction6').style.fontWeight = 'normal';
 				
 				document.getElementById('faction1').style.color='#A5C3D3';
 				document.getElementById('faction2').style.color='#A5C3D3';
 				document.getElementById('faction3').style.color='#A5C3D3';
-		
+				document.getElementById('faction4').style.color='#A5C3D3';
+				document.getElementById('faction5').style.color='#A5C3D3';
+				document.getElementById('faction6').style.color='#A5C3D3';
 				
 				
 				
@@ -249,6 +253,20 @@
 
 
 
+.auto-style6 {
+	text-decoration:  line-through;
+}
+
+
+
+
+.auto-style7 {
+	color: #00FF00;
+}
+
+
+
+
 </style>
 
 
@@ -265,19 +283,19 @@
 		<table style="width: 100%">
 			<tr>
 				<td style="width: 30%" valign="top"><span class="auto-style2">
-				Version: WIP-Alpha-preview2</span><br class="auto-style2">
+				Version: WIP-Alpha-preview3</span><br class="auto-style2">
 		<span class="auto-style2">GameVersion: 1.0.0.6</span><br class="auto-style2">
-		<span class="auto-style2">last updated: 2019-08-29</span></td>
+		<span class="auto-style2">last updated: 2019-08-30</span></td>
 				<td class="auto-style3" valign="top" style="width: 30%">
 				To-Do's:
 				
 				<ul>
-					<li> finish faction tree (50% done)</li>
+					<li> <span class="auto-style6">finish faction tree</span> (<span class="auto-style7">100%</span> done)</li>
 					<li> finish weapon tree (16% done)</li>
 					<li> finish secret tree (16% done)</li>
 					<li> cleanup, polish, add some fancyness :) (0% done)</li>
 				</ul>
-				doing now: add faction tree stuff
+				doing now: factions completed. now adding weapon tech stuff
 				</td>
 				<td class="auto-style3" valign="top">
 				planned completion: <br>around next sunday, 2019-09-01 - depand a bit on the weather - it's summertime =)
@@ -306,9 +324,8 @@ inGame.<br>
 <br> </span><br>
 		
 
- <div class="dragscroll" style="width: 100%; height: 1000px; overflow: auto; overflow-y: hidden;cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">  
-		
-		
+  <div class="dragscroll" style="width: 100%; height: 1000px; overflow: auto; overflow-y: hidden;cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">   
+<!-- <div class="dragscroll" style="width: 100%; height: 1000px; overflow: auto; overflow-y: hidden;cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">   -->
 		
         
         
@@ -317,11 +334,13 @@ inGame.<br>
        <table >
 		   <tr>
 			   <td width="300px"><div class="auto-style1">Faction Techs</div></td>
-    <td align="center" style="width: 101px"><a href="#" id="faction1" style="font-weight:bold;color:#FFFFFF;" onclick="showhide('facVan');changeFaction('faction1');">Vanguard</a></td>
-    <td width="100px" align="center"><a href="#" id="faction2" onclick="showhide('facKir');changeFaction('faction2');">Kir'Ko</a></td>
-    <td width="100px" align="center"><a href="#" id="faction3" onclick="showhide('facDva');changeFaction('faction3');">Dvar</a></td>
-
-
+    <td align="center" style="width: 101px"><a href="#/" id="faction1" style="font-weight:bold;color:#FFFFFF;" onclick="showhide('facVan');changeFaction('faction1');">Vanguard</a></td>
+    <td width="100px" align="center"><a href="#/" id="faction2" onclick="showhide('facKir');changeFaction('faction2');">Kir'Ko</a></td>
+    <td width="100px" align="center"><a href="#/" id="faction3" onclick="showhide('facDva');changeFaction('faction3');">Dvar</a></td>
+	<td width="100px" align="center"><a href="#/" id="faction4" onclick="showhide('facAma');changeFaction('faction4');">Amazon</a></td>
+	<td width="100px" align="center"><a href="#/" id="faction5" onclick="showhide('facSyn');changeFaction('faction5');">Syndicate</a></td>
+	<td width="100px" align="center"><a href="#/" id="faction6" onclick="showhide('facAss');changeFaction('faction6');">Assembly</a></td>
+	
 		   </tr>
 </table>
      </div>  
@@ -758,6 +777,495 @@ inGame.<br>
 	</tr>
 </table>
 <!-- End ImageReady Slices -->
+
+</div>
+
+<div id="facAma" style="display: none;" >  
+
+<table id="Tabelle_01" width="4143" height="249" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="25">
+			<img src="img/trees/faction_amazon_01.png" width="4142" height="30" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="30" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="4" rowspan="5">
+			<img src="img/trees/faction_amazon_02.png" width="753" height="165" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_03.png" width="57" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_3.png" ></div></div></td>
+		<td colspan="5" rowspan="2">
+			<img src="img/trees/faction_amazon_04.png" width="711" height="82" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_05.png" width="59" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_9.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_06.png" width="54" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_10.png" ></div></div></td>
+		<td rowspan="6">
+			<img src="img/trees/faction_amazon_07.png" width="274" height="219" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_08.png" width="60" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_13.png" ></div></div></td>
+		<td colspan="5" rowspan="2">
+			<img src="img/trees/faction_amazon_09.png" width="712" height="82" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_10.png" width="56" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_20.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_11.png" width="56" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_21.png" ></div></div></td>
+		<td rowspan="6">
+			<img src="img/trees/faction_amazon_12.png" width="657" height="219" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_13.png" width="60" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_26.png" ></div></div></td>
+		<td colspan="2" rowspan="5">
+			<img src="img/trees/faction_amazon_14.png" width="633" height="165" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="49" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="5">
+			<img src="img/trees/faction_amazon_15.png" width="57" height="170" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/faction_amazon_16.png" width="113" height="33" alt=""></td>
+		<td>
+			<img src="img/trees/faction_amazon_17.png" width="60" height="33" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/faction_amazon_18.png" width="112" height="33" alt=""></td>
+		<td rowspan="4">
+			<img src="img/trees/faction_amazon_19.png" width="60" height="116" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="33" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="4">
+			<img src="img/trees/faction_amazon_20.png" width="330" height="137" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_21.png" width="54" height="51" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_4.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_22.png" width="57" height="51" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_5.png" ></div></div></td>
+		<td colspan="2" rowspan="3">
+			<img src="img/trees/faction_amazon_23.png" width="270" height="83" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_24.png" width="59" height="51" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_11.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_25.png" width="54" height="51" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_12.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_26.png" width="60" height="51" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_14.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_27.png" width="54" height="51" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_15.png" ></div></div></td>
+		<td colspan="4" rowspan="3">
+			<img src="img/trees/faction_amazon_28.png" width="658" height="83" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_29.png" width="56" height="51" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_22.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_30.png" width="56" height="51" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_23.png" ></div></div></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="51" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="2">
+			<img src="img/trees/faction_amazon_31.png" width="111" height="32" alt=""></td>
+		<td colspan="2" rowspan="3">
+			<img src="img/trees/faction_amazon_32.png" width="113" height="86" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/faction_amazon_33.png" width="114" height="27" alt=""></td>
+		<td colspan="2" rowspan="2">
+			<img src="img/trees/faction_amazon_34.png" width="112" height="32" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="27" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_amazon_35.png" width="60" height="59" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_16.png" ></div></div></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_amazon_36.png" width="54" height="59" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_17.png" ></div></div></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="5" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/faction_amazon_37.png" width="365" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_38.png" width="58" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_39.png" width="57" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_2.png" ></div></div></td>
+		<td>
+			<img src="img/trees/faction_amazon_40.png" width="273" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_41.png" width="54" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_6.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_42.png" width="57" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_7.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_43.png" width="55" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_8.png" ></div></div></td>
+		<td>
+			<img src="img/trees/faction_amazon_44.png" width="215" height="54" alt=""></td>
+		<td>
+			<img src="img/trees/faction_amazon_45.png" width="276" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_46.png" width="54" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_18.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_47.png" width="55" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_19.png" ></div></div></td>
+		<td>
+			<img src="img/trees/faction_amazon_48.png" width="273" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_49.png" width="56" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_24.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_50.png" width="56" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_25.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_51.png" width="60" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_27.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_amazon_52.png" width="54" height="54" alt=""><div class="bottom"><img alt="" src="img/factions/amazon/amazon_28.png" ></div></div></td>
+		<td>
+			<img src="img/trees/faction_amazon_53.png" width="579" height="54" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="54" alt=""></td>
+	</tr>
+</table>
+
+
+</div>
+<div id="facSyn" style="display: none;" >  <!--  -->
+
+<!-- ImageReady Slices (faction_syndicate.psd) -->
+<table id="Tabelle_01" width="4144" height="249" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="27">
+			<img src="img/trees/faction_syndicate_01.png" width="4144" height="31" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="4" rowspan="4">
+			<img src="img/trees/faction_syndicate_02.png" width="754" height="162" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_03.png" width="56" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_3.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_04.png" width="55" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_4.png" ></div></div></td>
+		<td rowspan="5">
+			<img src="img/trees/faction_syndicate_05.png" width="273" height="218" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_06.png" width="57" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_7.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_07.png" width="56" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_8.png" ></div></div></td>
+		<td colspan="5" rowspan="4">
+			<img src="img/trees/faction_syndicate_08.png" width="659" height="162" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_09.png" width="55" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_16.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_10.png" width="56" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_17.png" ></div></div></td>
+		<td colspan="5" rowspan="2">
+			<img src="img/trees/faction_syndicate_11.png" width="660" height="82" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_12.png" width="56" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_23.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_13.png" width="56" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_24.png" ></div></div></td>
+		<td rowspan="5">
+			<img src="img/trees/faction_syndicate_14.png" width="660" height="218" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_15.png" width="55" height="49" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_27.png" ></div></div></td>
+		<td colspan="2" rowspan="4">
+			<img src="img/trees/faction_syndicate_16.png" width="636" height="162" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="img/trees/faction_syndicate_17.png" width="111" height="33" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/faction_syndicate_18.png" width="113" height="33" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/faction_syndicate_19.png" width="111" height="33" alt=""></td>
+		<td colspan="2" rowspan="3">
+			<img src="img/trees/faction_syndicate_20.png" width="112" height="113" alt=""></td>
+		<td rowspan="3">
+			<img src="img/trees/faction_syndicate_21.png" width="55" height="113" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_22.png" width="56" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_5.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_23.png" width="55" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_6.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_24.png" width="57" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_9.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_25.png" width="56" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_10.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_26.png" width="55" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_18.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_27.png" width="56" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_19.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_28.png" width="53" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_20.png" ></div></div></td>
+		<td colspan="4" rowspan="2">
+			<img src="img/trees/faction_syndicate_29.png" width="607" height="80" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="2">
+			<img src="img/trees/faction_syndicate_30.png" width="111" height="84" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/faction_syndicate_31.png" width="113" height="28" alt=""></td>
+		<td colspan="3" rowspan="2">
+			<img src="img/trees/faction_syndicate_32.png" width="164" height="84" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/faction_syndicate_33.png" width="368" height="56" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_34.png" width="55" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_35.png" width="56" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_2.png" ></div></div></td>
+		<td>
+			<img src="img/trees/faction_syndicate_36.png" width="275" height="56" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_37.png" width="57" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_11.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_38.png" width="56" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_12.png" ></div></div></td>
+		<td>
+			<img src="img/trees/faction_syndicate_39.png" width="275" height="56" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_40.png" width="54" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_13.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_41.png" width="55" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_14.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_42.png" width="56" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_15.png" ></div></div></td>
+		<td>
+			<img src="img/trees/faction_syndicate_43.png" width="219" height="56" alt=""></td>
+		<td>
+			<img src="img/trees/faction_syndicate_44.png" width="223" height="56" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_45.png" width="55" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_21.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_46.png" width="56" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_22.png" ></div></div></td>
+		<td>
+			<img src="img/trees/faction_syndicate_47.png" width="273" height="56" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_48.png" width="56" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_25.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_49.png" width="56" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_26.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_50.png" width="55" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_28.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_syndicate_51.png" width="57" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/syndicate/syndicate_29.png" ></div></div></td>
+		<td>
+			<img src="img/trees/faction_syndicate_52.png" width="579" height="56" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</div>
+
+
+<div id="facAss" style="display: none;"  >  <!-- -->
+
+<!-- ImageReady Slices (faction_assembly.psd) -->
+<table id="Tabelle_01" width="4143" height="250" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="29">
+			<img src="img/trees/faction_assembly_01.png" width="4142" height="29" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="29" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="4" rowspan="8">
+			<img src="img/trees/faction_assembly_02.png" width="753" height="169" alt=""></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_03.png" width="55" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_3.png" ></div></div></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_04.png" width="57" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_4.png" ></div></div></td>
+		<td rowspan="9">
+			<img src="img/trees/faction_assembly_05.png" width="275" height="220" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_06.png" width="54" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_7.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_07.png" width="57" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_8.png" ></div></div></td>
+		<td colspan="9" rowspan="4">
+			<img src="img/trees/faction_assembly_08.png" width="1043" height="83" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_09.png" width="56" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_19.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_10.png" width="56" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_20.png" ></div></div></td>
+		<td rowspan="9">
+			<img src="img/trees/faction_assembly_11.png" width="273" height="220" alt=""></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_12.png" width="55" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_23.png" ></div></div></td>
+		<td colspan="2" rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_13.png" width="55" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_24.png" ></div></div></td>
+		<td colspan="2" rowspan="7">
+			<img src="img/trees/faction_assembly_14.png" width="662" height="165" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_15.png" width="55" height="52" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_30.png" ></div></div></td>
+		<td colspan="2" rowspan="7">
+			<img src="img/trees/faction_assembly_16.png" width="636" height="165" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="52" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="5">
+			<img src="img/trees/faction_assembly_17.png" width="111" height="107" alt=""></td>
+		<td colspan="2" rowspan="3">
+			<img src="img/trees/faction_assembly_18.png" width="112" height="31" alt=""></td>
+		<td rowspan="6">
+			<img src="img/trees/faction_assembly_19.png" width="55" height="113" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="4" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="img/trees/faction_assembly_20.png" width="112" height="23" alt=""></td>
+		<td colspan="3" rowspan="2">
+			<img src="img/trees/faction_assembly_21.png" width="110" height="27" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="23" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_22.png" width="55" height="60" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_5.png" ></div></div></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_23.png" width="57" height="60" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_6.png" ></div></div></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="4" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="5">
+			<img src="img/trees/faction_assembly_24.png" width="273" height="137" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_25.png" width="56" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_11.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_26.png" width="53" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_12.png" ></div></div></td>
+		<td colspan="6" rowspan="2">
+			<img src="img/trees/faction_assembly_27.png" width="661" height="76" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_28.png" width="56" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_21.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_29.png" width="56" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_22.png" ></div></div></td>
+		<td colspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_30.png" width="59" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_25.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_31.png" width="51" height="56" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_26.png" ></div></div></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="56" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="4">
+			<img src="img/trees/faction_assembly_32.png" width="112" height="81" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/faction_assembly_33.png" width="109" height="20" alt=""></td>
+		<td colspan="2" rowspan="4">
+			<img src="img/trees/faction_assembly_34.png" width="112" height="81" alt=""></td>
+		<td colspan="3" rowspan="2">
+			<img src="img/trees/faction_assembly_35.png" width="110" height="26" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="20" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			<div class="tooltip"><img src="img/trees/faction_assembly_36.png" width="54" height="61" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_9.png" ></div></div></td>
+		<td rowspan="3">
+			<div class="tooltip"><img src="img/trees/faction_assembly_37.png" width="57" height="61" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_10.png" ></div></div></td>
+		<td rowspan="3">
+			<div class="tooltip"><img src="img/trees/faction_assembly_38.png" width="56" height="61" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_13.png" ></div></div></td>
+		<td rowspan="3">
+			<div class="tooltip"><img src="img/trees/faction_assembly_39.png" width="53" height="61" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_14.png" ></div></div></td>
+		<td rowspan="3">
+			<div class="tooltip"><img src="img/trees/faction_assembly_40.png" width="58" height="61" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_15.png" ></div></div></td>
+		<td rowspan="3">
+			<img src="img/trees/faction_assembly_41.png" width="216" height="61" alt=""></td>
+		<td rowspan="3">
+			<div class="tooltip"><img src="img/trees/faction_assembly_42.png" width="56" height="61" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_16.png" ></div></div></td>
+		<td rowspan="3">
+			<div class="tooltip"><img src="img/trees/faction_assembly_43.png" width="57" height="61" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_17.png" ></div></div></td>
+		<td rowspan="3">
+			<div class="tooltip"><img src="img/trees/faction_assembly_44.png" width="56" height="61" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_18.png" ></div></div></td>
+		<td rowspan="3">
+			<img src="img/trees/faction_assembly_45.png" width="218" height="61" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="6" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_46.png" width="59" height="55" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_27.png" ></div></div></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_47.png" width="51" height="55" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_28.png" ></div></div></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_48.png" width="60" height="55" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_29.png" ></div></div></td>
+		<td rowspan="2">
+			<img src="img/trees/faction_assembly_49.png" width="602" height="55" alt=""></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_50.png" width="55" height="55" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_31.png" ></div></div></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/faction_assembly_51.png" width="59" height="55" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_32.png" ></div></div></td>
+		<td rowspan="2">
+			<img src="img/trees/faction_assembly_52.png" width="577" height="55" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="4" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/faction_assembly_53.png" width="369" height="51" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_54.png" width="53" height="51" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/faction_assembly_55.png" width="55" height="51" alt=""><div class="bottom"><img alt="" src="img/factions/assembly/assembly_2.png" ></div></div></td>
+		<td>
+			<img src="img/trees/faction_assembly_56.png" width="276" height="51" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="51" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="369" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="53" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="55" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="276" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="55" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="57" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="275" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="54" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="57" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="273" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="56" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="53" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="58" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="216" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="56" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="57" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="56" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="218" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="56" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="56" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="273" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="55" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="4" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="51" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="60" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="602" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="55" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="59" height="1" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="577" height="1" alt=""></td>
+		<td></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+
 
 </div>
 
