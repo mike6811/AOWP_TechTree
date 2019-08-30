@@ -100,7 +100,7 @@
 
 .auto-style1 {
 	font-family: "hp_simplifiedlight","Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-	font-size: 36px;
+	font-size: 24px;
 	color: #A5C3D3;
 }
 .auto-style2 {
@@ -148,7 +148,7 @@
    
 <script type="text/javascript">
 
- 	var divs = ["facVan", "facKir", "facDva", "facAma", "facSyn", "facAss"];
+ 	var divs = ["facVan", "facKir", "facDva", "facAma", "facSyn", "facAss","weaBio","weaLas","weaFir","weaArc" ,"weaExp" ,"weaPsi"    ];
     var visibleDivId = null;
 	
 	function showhide() {
@@ -267,7 +267,16 @@
 
 
 
-</style>
+.auto-style8 {
+	font-family: "hp_simplifiedlight","Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: xx-large;
+	color: #A5C3D3;
+}
+
+
+
+
+</style> 
 
 
 
@@ -276,7 +285,7 @@
 <br>
 <table style="width: 100%">
 	<tr>
-		<td class="auto-style1">Age of Wonders: Planetfall TechTree</td>
+		<td class="auto-style8">Age of Wonders: Planetfall TechTree</td>
 	</tr>
 	<tr>
 		<td>
@@ -291,11 +300,11 @@
 				
 				<ul>
 					<li> <span class="auto-style6">finish faction tree</span> (<span class="auto-style7">100%</span> done)</li>
-					<li> finish weapon tree (16% done)</li>
+					<li> <span class="auto-style6">finish weapon tree</span> (<span class="auto-style7">100%</span> done)</li>
 					<li> finish secret tree (16% done)</li>
 					<li> cleanup, polish, add some fancyness :) (0% done)</li>
 				</ul>
-				doing now: factions completed. now adding weapon tech stuff
+				doing now: factions and weapons completed. now adding secret tech stuff. 
 				</td>
 				<td class="auto-style3" valign="top">
 				planned completion: <br>around next sunday, 2019-09-01 - depand a bit on the weather - it's summertime =)
@@ -315,16 +324,14 @@
 
 
             
-        <span class="auto-style2"><br></span>  
+        
 
             
-        <span class="auto-style5"><span class="auto-style4">New Feature</span></span><span class="auto-style2"> 
-for PC User: you can now simply drag the tree. just grab it and drag it, same as 
-inGame.<br>
-<br> </span><br>
+        <br>
 		
 
-  <div class="dragscroll" style="width: 100%; height: 1000px; overflow: auto; overflow-y: hidden;cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">   
+ <div class="dragscroll" style="width: 100%; height: 1000px; overflow: auto; overflow-y: hidden;cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;"> 
+ 
 <!-- <div class="dragscroll" style="width: 100%; height: 1000px; overflow: auto; overflow-y: hidden;cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">   -->
 		
         
@@ -334,12 +341,12 @@ inGame.<br>
        <table >
 		   <tr>
 			   <td width="300px"><div class="auto-style1">Faction Techs</div></td>
-    <td align="center" style="width: 101px"><a href="#/" id="faction1" style="font-weight:bold;color:#FFFFFF;" onclick="showhide('facVan');changeFaction('faction1');">Vanguard</a></td>
-    <td width="100px" align="center"><a href="#/" id="faction2" onclick="showhide('facKir');changeFaction('faction2');">Kir'Ko</a></td>
-    <td width="100px" align="center"><a href="#/" id="faction3" onclick="showhide('facDva');changeFaction('faction3');">Dvar</a></td>
-	<td width="100px" align="center"><a href="#/" id="faction4" onclick="showhide('facAma');changeFaction('faction4');">Amazon</a></td>
-	<td width="100px" align="center"><a href="#/" id="faction5" onclick="showhide('facSyn');changeFaction('faction5');">Syndicate</a></td>
-	<td width="100px" align="center"><a href="#/" id="faction6" onclick="showhide('facAss');changeFaction('faction6');">Assembly</a></td>
+    <td align="center" style="width: 101px"><a href="#/" id="faction1" style="font-weight:bold;color:#FFFFFF;" onclick="showhide('facVan','weaLas', 'weaFir');changeFaction('faction1');">Vanguard</a></td>
+    <td width="100px" align="center"><a href="#/" id="faction2" onclick="showhide('facKir','weaBio', 'weaPsi');changeFaction('faction2');">Kir'Ko</a></td>
+    <td width="100px" align="center"><a href="#/" id="faction3" onclick="showhide('facDva','weaFir', 'weaExp');changeFaction('faction3');">Dvar</a></td>
+	<td width="100px" align="center"><a href="#/" id="faction4" onclick="showhide('facAma','weaBio', 'weaLas');changeFaction('faction4');">Amazon</a></td>
+	<td width="100px" align="center"><a href="#/" id="faction5" onclick="showhide('facSyn','weaPsi', 'weaArc');changeFaction('faction5');">Syndicate</a></td>
+	<td width="100px" align="center"><a href="#/" id="faction6" onclick="showhide('facAss','weaFir', 'weaArc');changeFaction('faction6');">Assembly</a></td>
 	
 		   </tr>
 </table>
@@ -1202,67 +1209,7 @@ inGame.<br>
 		<td>
 			<img src="img/trees/Abstandhalter.gif" width="1" height="51" alt=""></td>
 	</tr>
-	<tr>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="369" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="53" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="55" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="276" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="55" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="57" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="275" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="54" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="57" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="273" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="56" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="53" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="58" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="216" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="56" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="57" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="56" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="218" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="56" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="56" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="273" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="55" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="4" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="51" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="60" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="602" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="55" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="59" height="1" alt=""></td>
-		<td>
-			<img src="img/trees/Abstandhalter.gif" width="577" height="1" alt=""></td>
-		<td></td>
-	</tr>
+	
 </table>
 <!-- End ImageReady Slices -->
 
@@ -1270,10 +1217,64 @@ inGame.<br>
 </div>
 
 
-<br><div class="auto-style1"><br>Weapon Techs</div>
+<br>
 
 
 
+<div class="auto-style1"><br>Weapon Techs</div>
+
+
+
+<div id="weaBio" style="display: none;"  >
+
+<!-- ImageReady Slices (weapon_bio.psd) -->
+<table id="Tabelle_01" width="4139" height="84" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="16">
+			<img src="img/trees/weapon_bio_01.png" width="4139" height="30" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/weapon_bio_02.png" width="365" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_bio_03.png" width="57" height="54" alt=""><div class="top"><img alt="" src="img/weapons/bio/bio_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_bio_04.png" width="54" height="54" alt=""><div class="top"><img alt="" src="img/weapons/bio/bio_2.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_bio_05.png" width="659" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_bio_06.png" width="57" height="54" alt=""><div class="top"><img alt="" src="img/weapons/bio/bio_3.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_bio_07.png" width="58" height="54" alt=""><div class="top"><img alt="" src="img/weapons/bio/bio_4.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_bio_08.png" width="658" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_bio_09.png" width="55" height="54" alt=""><div class="top"><img alt="" src="img/weapons/bio/bio_5.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_bio_10.png" width="58" height="54" alt=""><div class="top"><img alt="" src="img/weapons/bio/bio_6.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_bio_11.png" width="655" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_bio_12.png" width="58" height="54" alt=""><div class="top"><img alt="" src="img/weapons/bio/bio_7.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_bio_13.png" width="58" height="54" alt=""><div class="top"><img alt="" src="img/weapons/bio/bio_8.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_bio_14.png" width="656" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_bio_15.png" width="59" height="54" alt=""><div class="top"><img alt="" src="img/weapons/bio/bio_9.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_bio_16.png" width="55" height="54" alt=""><div class="top"><img alt="" src="img/weapons/bio/bio_10.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_bio_17.png" width="577" height="54" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+
+</div>
+
+
+
+<div id="weaLas"   >
 
 <!-- ImageReady Slices (weapon_laser.psd) -->
 <table id="Tabelle_01" width="4136" height="84" border="0" cellpadding="0" cellspacing="0">
@@ -1317,6 +1318,200 @@ inGame.<br>
 	</tr>
 </table>
 <!-- End ImageReady Slices -->
+</div>
+
+<div id="weaFir"  >
+
+<!-- ImageReady Slices (Firearms) -->
+<table id="Tabelle_01" width="4142" height="84" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="16">
+			<img src="img/trees/weapon_fir_01.png" width="4142" height="31" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/weapon_fir_02.png" width="367" height="53" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_fir_03.png" width="58" height="53" alt=""><div class="top"><img alt="" src="img/weapons/firearms/firearms_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_fir_04.png" width="53" height="53" alt=""><div class="top"><img alt="" src="img/weapons/firearms/firearms_2.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_fir_05.png" width="659" height="53" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_fir_06.png" width="56" height="53" alt=""><div class="top"><img alt="" src="img/weapons/firearms/firearms_3.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_fir_07.png" width="57" height="53" alt=""><div class="top"><img alt="" src="img/weapons/firearms/firearms_4.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_fir_08.png" width="659" height="53" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_fir_09.png" width="58" height="53" alt=""><div class="top"><img alt="" src="img/weapons/firearms/firearms_5.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_fir_10.png" width="57" height="53" alt=""><div class="top"><img alt="" src="img/weapons/firearms/firearms_6.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_fir_11.png" width="657" height="53" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_fir_12.png" width="57" height="53" alt=""><div class="top"><img alt="" src="img/weapons/firearms/firearms_7.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_fir_13.png" width="55" height="53" alt=""><div class="top"><img alt="" src="img/weapons/firearms/firearms_8.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_fir_14.png" width="659" height="53" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_fir_15.png" width="57" height="53" alt=""><div class="top"><img alt="" src="img/weapons/firearms/firearms_9.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_fir_16.png" width="54" height="53" alt=""><div class="top"><img alt="" src="img/weapons/firearms/firearms_10.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_fir_17.png" width="579" height="53" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+
+</div>
+
+<div id="weaExp" style="display: none;"  >
+
+<!-- ImageReady Slices (weapon_explosive.psd) -->
+<table id="Tabelle_01" width="4138" height="84" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="16">
+			<img src="img/trees/weapon_explosive_01.png" width="4138" height="30" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/weapon_explosive_02.png" width="750" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_explosive_03.png" width="56" height="54" alt=""><div class="top"><img alt="" src="img/weapons/explosive/explosive_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_explosive_04.png" width="56" height="54" alt=""><div class="top"><img alt="" src="img/weapons/explosive/explosive_2.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_explosive_05.png" width="658" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_explosive_06.png" width="56" height="54" alt=""><div class="top"><img alt="" src="img/weapons/explosive/explosive_3.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_explosive_07.png" width="55" height="54" alt=""><div class="top"><img alt="" src="img/weapons/explosive/explosive_4.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_explosive_08.png" width="661" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_explosive_09.png" width="57" height="54" alt=""><div class="top"><img alt="" src="img/weapons/explosive/explosive_5.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_explosive_10.png" width="56" height="54" alt=""><div class="top"><img alt="" src="img/weapons/explosive/explosive_6.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_explosive_11.png" width="659" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_explosive_12.png" width="57" height="54" alt=""><div class="top"><img alt="" src="img/weapons/explosive/explosive_7.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_explosive_13.png" width="55" height="54" alt=""><div class="top"><img alt="" src="img/weapons/explosive/explosive_8.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_explosive_14.png" width="271" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_explosive_15.png" width="58" height="54" alt=""><div class="top"><img alt="" src="img/weapons/explosive/explosive_9.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_explosive_16.png" width="56" height="54" alt=""><div class="top"><img alt="" src="img/weapons/explosive/explosive_10.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_explosive_17.png" width="577" height="54" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</div>
+
+<div id="weaPsi" style="display: none;"  >
+
+<!-- ImageReady Slices (weapon_psi.psd) -->
+<table id="Tabelle_01" width="4140" height="84" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="17">
+			<img src="img/trees/weapon_psi_01.png" width="4140" height="32" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/weapon_psi_02.png" width="754" height="52" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_03.png" width="54" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_04.png" width="55" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_2.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_05.png" width="56" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_3.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_psi_06.png" width="607" height="52" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_07.png" width="52" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_4.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_08.png" width="58" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_5.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_psi_09.png" width="656" height="52" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_10.png" width="58" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_6.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_11.png" width="56" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_7.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_psi_12.png" width="659" height="52" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_13.png" width="56" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_8.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_14.png" width="56" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_9.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_psi_15.png" width="273" height="52" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_16.png" width="58" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_10.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_psi_17.png" width="57" height="52" alt=""><div class="top"><img alt="" src="img/weapons/psi/psi_11.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_psi_18.png" width="575" height="52" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</div>
+
+
+<div id="weaArc" style="display: none;"  >
+
+<!-- ImageReady Slices (weapon_arc.psd) -->
+<table id="Tabelle_01" width="4137" height="84" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="18">
+			<img src="img/trees/weapon_arc_01.png" width="4137" height="30" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/weapon_arc_02.png" width="751" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_03.png" width="56" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_04.png" width="55" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_2.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_arc_05.png" width="660" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_06.png" width="55" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_3.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_07.png" width="56" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_4.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_arc_08.png" width="659" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_09.png" width="57" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_5.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_10.png" width="55" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_6.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_arc_11.png" width="657" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_12.png" width="59" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_7.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_13.png" width="54" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_8.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_14.png" width="56" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_9.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_arc_15.png" width="218" height="54" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_16.png" width="57" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_10.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_17.png" width="56" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_11.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/weapon_arc_18.png" width="56" height="54" alt=""><div class="top"><img alt="" src="img/weapons/arc/arc_12.png" ></div></div></td>
+		<td>
+			<img src="img/trees/weapon_arc_19.png" width="520" height="54" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</div>
+
 
 <br>
 <br><div class="auto-style1"><br>Secret Techs</div>
@@ -1333,9 +1528,9 @@ inGame.<br>
 		<td colspan="9" rowspan="2">
 			<img src="img/trees/secret_synthesis_02.png" width="1139" height="81" alt=""></td>
 		<td>
-			<div class="tooltip"><img src="img/trees/secret_synthesis_03.png" width="55" height="49" alt=""><div class="top"><img alt="" src="img/secrets/synthesis/synthesis_7.png" ></td>
+			<div class="tooltip"><img src="img/trees/secret_synthesis_03.png" width="55" height="49" alt=""><div class="top"><img alt="" src="img/secrets/synthesis/synthesis_7.png" ></div></div></td>
 		<td>
-			<div class="tooltip"><img src="img/trees/secret_synthesis_04.png" width="56" height="49" alt=""><div class="top"><img alt="" src="img/secrets/synthesis/synthesis_8.png" ></td>
+			<div class="tooltip"><img src="img/trees/secret_synthesis_04.png" width="56" height="49" alt=""><div class="top"><img alt="" src="img/secrets/synthesis/synthesis_8.png" ></div></div></td>
 		<td colspan="6" rowspan="5">
 			<img src="img/trees/secret_synthesis_05.png" width="660" height="164" alt=""></td>
 		<td>
