@@ -129,18 +129,6 @@
 
 
 
-.auto-style4 {
-	color: #083138;
-	background-color: #00FF00;
-}
-.auto-style5 {
-	font-family: "Courier New", Courier, monospace;
-	font-size: 14px;
-}
-
-
-
-
 
 </style>
 <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
@@ -148,7 +136,7 @@
    
 <script type="text/javascript">
 
- 	var divs = ["facVan", "facKir", "facDva", "facAma", "facSyn", "facAss","weaBio","weaLas","weaFir","weaArc" ,"weaExp" ,"weaPsi"    ];
+ 	var divs = ["facVan", "facKir", "facDva", "facAma", "facSyn", "facAss","weaBio","weaLas","weaFir","weaArc" ,"weaExp" ,"weaPsi" ];
     var visibleDivId = null;
 	
 	function showhide() {
@@ -170,6 +158,35 @@
 		
 
 	}
+	
+	
+	var divs2 = ["secSyn","secCel" ];
+    var visibleDivId = null;
+	
+	function showhide2() {
+	  var i, divId, div;
+	  for(i = 0; i < divs2.length; i++) {
+		divId = divs2[i];
+		div = document.getElementById(divId);
+		if(visibleDivId === divId) {
+		  div.style.display = "block";
+		} else {
+		  div.style.display = "none";
+		}
+	  }
+
+		for (var i = 0; i < arguments.length; i++) {
+			var e = document.getElementById(arguments[i]);
+			e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+		}
+		
+
+	}
+
+	
+	
+	
+	
 
 	function changeFaction(linkid)
 		{
@@ -197,9 +214,12 @@
 		{
 				document.getElementById('secret1').style.fontWeight = 'normal';
 				document.getElementById('secret2').style.fontWeight = 'normal';
-				document.getElementById('secret3').style.fontWeight = 'normal';
-				document.getElementById('secret4').style.fontWeight = 'normal';
-				document.getElementById(linkid).style.color= white;
+				
+				document.getElementById('secret1').style.color='#A5C3D3';
+				document.getElementById('secret2').style.color='#A5C3D3';
+				
+				document.getElementById(linkid).style.fontWeight = 'bold';
+				document.getElementById(linkid).style.color= '#FFFFFF';
 		}
 
 
@@ -292,16 +312,16 @@
 		<table style="width: 100%">
 			<tr>
 				<td style="width: 30%" valign="top"><span class="auto-style2">
-				Version: WIP-Alpha-preview3</span><br class="auto-style2">
+				Version: WIP-Alpha-preview5</span><br class="auto-style2">
 		<span class="auto-style2">GameVersion: 1.0.0.6</span><br class="auto-style2">
-		<span class="auto-style2">last updated: 2019-08-30</span></td>
+		<span class="auto-style2">last updated: 2019-08-31</span></td>
 				<td class="auto-style3" valign="top" style="width: 30%">
 				To-Do's:
 				
 				<ul>
 					<li> <span class="auto-style6">finish faction tree</span> (<span class="auto-style7">100%</span> done)</li>
 					<li> <span class="auto-style6">finish weapon tree</span> (<span class="auto-style7">100%</span> done)</li>
-					<li> finish secret tree (16% done)</li>
+					<li> finish secret tree (33% done)</li>
 					<li> cleanup, polish, add some fancyness :) (0% done)</li>
 				</ul>
 				doing now: factions and weapons completed. now adding secret tech stuff. 
@@ -330,9 +350,8 @@
         <br>
 		
 
- <div class="dragscroll" style="width: 100%; height: 1000px; overflow: auto; overflow-y: hidden;cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;"> 
  
-<!-- <div class="dragscroll" style="width: 100%; height: 1000px; overflow: auto; overflow-y: hidden;cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">   -->
+ <div class="dragscroll" style="width: 100%; height: 1000px; overflow: auto; overflow-y: hidden;cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">  
 		
         
         
@@ -1514,7 +1533,20 @@
 
 
 <br>
-<br><div class="auto-style1"><br>Secret Techs</div>
+<br>        <div class="buttons">
+
+       <table >
+		   <tr>
+			   <td width="300px"><div class="auto-style1">Secret Techs</div></td>
+    <td align="center" style="width: 101px"><a href="#/" id="secret1" style="font-weight:bold;color:#FFFFFF;" onclick="showhide2('secSyn');changeSecret('secret1');">Synthesis</a></td>
+    <td width="100px" align="center"><a href="#/" id="secret2" onclick="showhide2('secCel');changeSecret('secret2');">Celestian</a></td>
+	
+		   </tr>
+</table>
+     </div> 
+
+<div id="secSyn">
+
 
 <!-- ImageReady Slices (secret_synthesis.psd) -->
 <table id="Tabelle_01" width="4144" height="250" border="0" cellpadding="0" cellspacing="0">
@@ -1654,6 +1686,147 @@
 	</tr>
 </table>
 <!-- End ImageReady Slices -->
+</div>
+
+<div id="secCel"  style="display: none;">
+<!-- ImageReady Slices (secret_celestian.psd) -->
+<table id="Tabelle_01" width="4144" height="250" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="29">
+			<img src="img/trees/secret_celestian_01.png" width="4143" height="29" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="29" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="7" rowspan="5">
+			<img src="img/trees/secret_celestian_02.png" width="1140" height="165" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_03.png" width="55" height="51" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_5.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_04.png" width="56" height="51" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_6.png" ></div></div></td>
+		<td colspan="5" rowspan="3">
+			<img src="img/trees/secret_celestian_05.png" width="655" height="82" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_06.png" width="60" height="51" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_12.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_07.png" width="60" height="51" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_13.png" ></div></div></td>
+		<td colspan="10" rowspan="3">
+			<img src="img/trees/secret_celestian_08.png" width="1811" height="82" alt=""></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/secret_celestian_09.png" width="57" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_24.png" ></div></div></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/secret_celestian_10.png" width="57" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_25.png" ></div></div></td>
+		<td rowspan="6">
+			<img src="img/trees/secret_celestian_11.png" width="192" height="221" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="51" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="2">
+			<img src="img/trees/secret_celestian_12.png" width="111" height="31" alt=""></td>
+		<td colspan="2" rowspan="2">
+			<img src="img/trees/secret_celestian_13.png" width="120" height="31" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="5" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="img/trees/secret_celestian_14.png" width="114" height="26" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="26" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_15.png" width="55" height="55" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_7.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_16.png" width="56" height="55" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_8.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_17.png" width="55" height="55" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_9.png" ></div></div></td>
+		<td colspan="4" rowspan="2">
+			<img src="img/trees/secret_celestian_18.png" width="600" height="83" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_19.png" width="60" height="55" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_14.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_20.png" width="60" height="55" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_15.png" ></div></div></td>
+		<td rowspan="3">
+			<img src="img/trees/secret_celestian_21.png" width="270" height="139" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_22.png" width="56" height="55" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_16.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_23.png" width="56" height="55" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_17.png" ></div></div></td>
+		<td rowspan="3">
+			<img src="img/trees/secret_celestian_24.png" width="657" height="139" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_25.png" width="59" height="55" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_20.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_26.png" width="54" height="55" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_21.png" ></div></div></td>
+		<td colspan="4" rowspan="2">
+			<img src="img/trees/secret_celestian_27.png" width="659" height="83" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_28.png" width="57" height="55" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_26.png" ></div></div></td>
+		<td rowspan="3">
+			<img src="img/trees/secret_celestian_29.png" width="57" height="139" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="55" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="2">
+			<img src="img/trees/secret_celestian_30.png" width="166" height="84" alt=""></td>
+		<td colspan="2" rowspan="2">
+			<img src="img/trees/secret_celestian_31.png" width="120" height="84" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/secret_celestian_32.png" width="112" height="28" alt=""></td>
+		<td colspan="2" rowspan="2">
+			<img src="img/trees/secret_celestian_33.png" width="113" height="84" alt=""></td>
+		<td rowspan="2">
+			<img src="img/trees/secret_celestian_34.png" width="57" height="84" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="28" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/secret_celestian_35.png" width="366" height="56" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_36.png" width="57" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_37.png" width="58" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_2.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_celestian_38.png" width="269" height="56" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_39.png" width="59" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_3.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_40.png" width="56" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_4.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_celestian_41.png" width="275" height="56" alt=""></td>
+		<td>
+			<img src="img/trees/secret_celestian_42.png" width="218" height="56" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_43.png" width="56" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_10.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_44.png" width="54" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_11.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_celestian_45.png" width="272" height="56" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_46.png" width="56" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_18.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_47.png" width="56" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_19.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_celestian_48.png" width="275" height="56" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_49.png" width="56" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_22.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_celestian_50.png" width="56" height="56" alt=""><div class="top"><img alt="" src="img/secrets/celestian/celestian_23.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_celestian_51.png" width="272" height="56" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="56" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</div>
+
+</div>
+
 
 </body>
 </html>
