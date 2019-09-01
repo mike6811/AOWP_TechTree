@@ -160,7 +160,7 @@
 	}
 	
 	
-	var divs2 = ["secSyn","secCel" ];
+	var divs2 = ["secSyn","secCel","secPsy" ,"secXen"  ];
     var visibleDivId = null;
 	
 	function showhide2() {
@@ -214,9 +214,14 @@
 		{
 				document.getElementById('secret1').style.fontWeight = 'normal';
 				document.getElementById('secret2').style.fontWeight = 'normal';
+				document.getElementById('secret3').style.fontWeight = 'normal';
+				document.getElementById('secret4').style.fontWeight = 'normal';
 				
 				document.getElementById('secret1').style.color='#A5C3D3';
 				document.getElementById('secret2').style.color='#A5C3D3';
+				document.getElementById('secret3').style.color='#A5C3D3';
+				document.getElementById('secret4').style.color='#A5C3D3';
+
 				
 				document.getElementById(linkid).style.fontWeight = 'bold';
 				document.getElementById(linkid).style.color= '#FFFFFF';
@@ -312,16 +317,16 @@
 		<table style="width: 100%">
 			<tr>
 				<td style="width: 30%" valign="top"><span class="auto-style2">
-				Version: WIP-Alpha-preview5</span><br class="auto-style2">
+				Version: WIP-Alpha-preview6</span><br class="auto-style2">
 		<span class="auto-style2">GameVersion: 1.0.0.6</span><br class="auto-style2">
-		<span class="auto-style2">last updated: 2019-08-31</span></td>
+		<span class="auto-style2">last updated: 2019-09-01</span></td>
 				<td class="auto-style3" valign="top" style="width: 30%">
 				To-Do's:
 				
 				<ul>
 					<li> <span class="auto-style6">finish faction tree</span> (<span class="auto-style7">100%</span> done)</li>
 					<li> <span class="auto-style6">finish weapon tree</span> (<span class="auto-style7">100%</span> done)</li>
-					<li> finish secret tree (33% done)</li>
+					<li> finish secret tree (66% done)</li>
 					<li> cleanup, polish, add some fancyness :) (0% done)</li>
 				</ul>
 				doing now: factions and weapons completed. now adding secret tech stuff. 
@@ -1540,6 +1545,9 @@
 			   <td width="300px"><div class="auto-style1">Secret Techs</div></td>
     <td align="center" style="width: 101px"><a href="#/" id="secret1" style="font-weight:bold;color:#FFFFFF;" onclick="showhide2('secSyn');changeSecret('secret1');">Synthesis</a></td>
     <td width="100px" align="center"><a href="#/" id="secret2" onclick="showhide2('secCel');changeSecret('secret2');">Celestian</a></td>
+    <td width="100px" align="center"><a href="#/" id="secret3" onclick="showhide2('secPsy');changeSecret('secret3');">Psynumbra</a></td>
+	<td width="100px" align="center"><a href="#/" id="secret4" onclick="showhide2('secXen');changeSecret('secret4');">Xenoplague</a></td>
+
 	
 		   </tr>
 </table>
@@ -1824,6 +1832,294 @@
 </table>
 <!-- End ImageReady Slices -->
 </div>
+
+
+
+
+
+<div id="secPsy"  style="display: none;">
+
+
+<!-- ImageReady Slices (secret_psynumbra.psd) -->
+<table id="Tabelle_01" width="4145" height="250" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="30">
+			<img src="img/trees/secret_psynumbra_01.png" width="4144" height="31" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="31" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="4" rowspan="6">
+			<img src="img/trees/secret_psynumbra_02.png" width="1140" height="167" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_03.png" width="54" height="51" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_3.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_04.png" width="56" height="51" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_4.png" ></div></div></td>
+		<td colspan="8" rowspan="2">
+			<img src="img/trees/secret_psynumbra_05.png" width="1046" height="81" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_06.png" width="55" height="51" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_12.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_07.png" width="56" height="51" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_13.png" ></div></div></td>
+		<td colspan="11" rowspan="2">
+			<img src="img/trees/secret_psynumbra_08.png" width="1431" height="81" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_09.png" width="54" height="51" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_23.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_10.png" width="57" height="51" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_24.png" ></div></div></td>
+		<td rowspan="7">
+			<img src="img/trees/secret_psynumbra_11.png" width="195" height="219" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="51" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="img/trees/secret_psynumbra_12.png" width="110" height="30" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/secret_psynumbra_13.png" width="111" height="30" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/secret_psynumbra_14.png" width="111" height="30" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="30" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_15.png" width="54" height="53" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_5.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_16.png" width="56" height="53" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_6.png" ></div></div></td>
+		<td colspan="5" rowspan="4">
+			<img src="img/trees/secret_psynumbra_17.png" width="659" height="86" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_18.png" width="57" height="53" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_10.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_19.png" width="56" height="53" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_11.png" ></div></div></td>
+		<td rowspan="5">
+			<img src="img/trees/secret_psynumbra_20.png" width="274" height="138" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_21.png" width="55" height="53" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_14.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_22.png" width="56" height="53" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_15.png" ></div></div></td>
+		<td colspan="5" rowspan="4">
+			<img src="img/trees/secret_psynumbra_23.png" width="662" height="86" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_24.png" width="53" height="53" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_19.png" ></div></div></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_25.png" width="55" height="59" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_20.png" ></div></div></td>
+		<td colspan="4" rowspan="3">
+			<img src="img/trees/secret_psynumbra_26.png" width="661" height="81" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_27.png" width="54" height="53" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_25.png" ></div></div></td>
+		<td rowspan="5">
+			<img src="img/trees/secret_psynumbra_28.png" width="57" height="138" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="53" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="4">
+			<img src="img/trees/secret_psynumbra_29.png" width="110" height="85" alt=""></td>
+		<td colspan="2" rowspan="4">
+			<img src="img/trees/secret_psynumbra_30.png" width="113" height="85" alt=""></td>
+		<td colspan="2" rowspan="4">
+			<img src="img/trees/secret_psynumbra_31.png" width="111" height="85" alt=""></td>
+		<td rowspan="4">
+			<img src="img/trees/secret_psynumbra_32.png" width="53" height="85" alt=""></td>
+		<td rowspan="4">
+			<img src="img/trees/secret_psynumbra_33.png" width="54" height="85" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="6" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			<img src="img/trees/secret_psynumbra_34.png" width="55" height="79" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="22" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="2">
+			<img src="img/trees/secret_psynumbra_35.png" width="275" height="57" alt=""></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_36.png" width="56" height="57" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_21.png" ></div></div></td>
+		<td rowspan="2">
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_37.png" width="55" height="57" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_22.png" ></div></div></td>
+		<td rowspan="2">
+			<img src="img/trees/secret_psynumbra_38.png" width="275" height="57" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="5" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/secret_psynumbra_39.png" width="366" height="52" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_40.png" width="56" height="52" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_41.png" width="58" height="52" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_2.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_psynumbra_42.png" width="660" height="52" alt=""></td>
+		<td>
+			<img src="img/trees/secret_psynumbra_43.png" width="274" height="52" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_44.png" width="54" height="52" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_7.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_45.png" width="56" height="52" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_8.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_46.png" width="55" height="52" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_9.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_psynumbra_47.png" width="220" height="52" alt=""></td>
+		<td>
+			<img src="img/trees/secret_psynumbra_48.png" width="276" height="52" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_49.png" width="54" height="52" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_16.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_50.png" width="54" height="52" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_17.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_psynumbra_51.png" width="55" height="52" alt=""><div class="top"><img alt="" src="img/secrets/psynumbra/psynumbra_18.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_psynumbra_52.png" width="223" height="52" alt=""></td>
+		<td>
+			<img src="img/trees/Abstandhalter.gif" width="1" height="52" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</div>
+
+
+
+<div id="secXen"  style="display: none;">
+
+
+
+<!-- ImageReady Slices (secret_xenoplague.psd) -->
+<table id="Tabelle_01" width="4143" height="250" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="31">
+			<img src="img/trees/secret_xenoplague_01.png" width="4143" height="28" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="4" rowspan="4">
+			<img src="img/trees/secret_xenoplague_02.png" width="754" height="167" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_03.png" width="55" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_3.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_04.png" width="55" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_4.png" ></div></div></td>
+		<td colspan="4" rowspan="2">
+			<img src="img/trees/secret_xenoplague_05.png" width="657" height="84" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_06.png" width="59" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_9.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_07.png" width="56" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_10.png" ></div></div></td>
+		<td colspan="4" rowspan="2">
+			<img src="img/trees/secret_xenoplague_08.png" width="659" height="84" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_09.png" width="56" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_15.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_10.png" width="58" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_16.png" ></div></div></td>
+		<td colspan="13" rowspan="2">
+			<img src="img/trees/secret_xenoplague_11.png" width="1734" height="84" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="4">
+			<img src="img/trees/secret_xenoplague_12.png" width="110" height="169" alt=""></td>
+		<td colspan="2" rowspan="4">
+			<img src="img/trees/secret_xenoplague_13.png" width="115" height="169" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/secret_xenoplague_14.png" width="114" height="31" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			<img src="img/trees/secret_xenoplague_15.png" width="275" height="138" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_16.png" width="57" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_5.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_17.png" width="56" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_6.png" ></div></div></td>
+		<td rowspan="3">
+			<img src="img/trees/secret_xenoplague_18.png" width="269" height="138" alt=""></td>
+		<td rowspan="3">
+			<img src="img/trees/secret_xenoplague_19.png" width="275" height="138" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_20.png" width="55" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_11.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_21.png" width="56" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_12.png" ></div></div></td>
+		<td rowspan="3">
+			<img src="img/trees/secret_xenoplague_22.png" width="273" height="138" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_23.png" width="56" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_17.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_24.png" width="58" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_18.png" ></div></div></td>
+		<td colspan="4" rowspan="2">
+			<img src="img/trees/secret_xenoplague_25.png" width="658" height="83" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_26.png" width="57" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_21.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_27.png" width="55" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_22.png" ></div></div></td>
+		<td colspan="5" rowspan="2">
+			<img src="img/trees/secret_xenoplague_28.png" width="661" height="83" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_29.png" width="53" height="53" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_26.png" ></div></div></td>
+		<td rowspan="3">
+			<img src="img/trees/secret_xenoplague_30.png" width="250" height="138" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="img/trees/secret_xenoplague_31.png" width="113" height="30" alt=""></td>
+		<td colspan="2">
+			<img src="img/trees/secret_xenoplague_32.png" width="111" height="30" alt=""></td>
+		<td colspan="2" rowspan="2">
+			<img src="img/trees/secret_xenoplague_33.png" width="114" height="85" alt=""></td>
+		<td colspan="2" rowspan="2">
+			<img src="img/trees/secret_xenoplague_34.png" width="112" height="85" alt=""></td>
+		<td rowspan="2">
+			<img src="img/trees/secret_xenoplague_35.png" width="53" height="85" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="img/trees/secret_xenoplague_36.png" width="367" height="55" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_37.png" width="56" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_1.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_38.png" width="57" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_2.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_xenoplague_39.png" width="274" height="55" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_40.png" width="57" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_7.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_41.png" width="56" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_8.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_42.png" width="55" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_13.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_43.png" width="56" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_14.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_xenoplague_44.png" width="275" height="55" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_45.png" width="53" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_19.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_46.png" width="56" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_20.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_xenoplague_47.png" width="274" height="55" alt=""></td>
+		<td>
+			<img src="img/trees/secret_xenoplague_48.png" width="273" height="55" alt=""></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_49.png" width="56" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_23.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_50.png" width="55" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_24.png" ></div></div></td>
+		<td>
+			<div class="tooltip"><img src="img/trees/secret_xenoplague_51.png" width="56" height="55" alt=""><div class="top"><img alt="" src="img/secrets/xenoplague/xenoplague_25.png" ></div></div></td>
+		<td>
+			<img src="img/trees/secret_xenoplague_52.png" width="221" height="55" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+
+
+
+
+
+</div>
+
+
+
+
+
+
 
 </div>
 
