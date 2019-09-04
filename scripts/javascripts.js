@@ -97,6 +97,6 @@
 
 function changeSize()
 {
- document.getElementById('dragdiv').style.width = window.innerWidth - 100 ;
+  document.getElementById('dragdiv').style.width = window.innerWidth - 100 ;
 
 }
