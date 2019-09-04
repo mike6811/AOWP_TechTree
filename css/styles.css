@@ -150,6 +150,13 @@
 }
 
 
+.redtext {
+	text-align: left;
+	font-family: "Play", "Courier New", Courier, monospace;
+	font-size: 12px;
+	color: red;
+}
+
 
 .buttonstyle {
 	font-family: "Play", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
