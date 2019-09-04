@@ -97,7 +97,7 @@
 
 function changeSize()
 {
-document.getElementById('dragdiv').style.width = window.innerWidth - 105 ;
+document.getElementById('dragdiv').style.width = window.innerWidth - 115 ;
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	
