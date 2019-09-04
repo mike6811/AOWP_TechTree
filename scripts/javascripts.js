@@ -99,12 +99,11 @@ function changeSize()
 {
 document.getElementById('dragdiv').style.width = window.innerWidth - 95 ;
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-
- document.getElementById('rightdiv').style.right='-50px' ;
- 
- 
-}
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	
+	 document.getElementById('rightdiv').style.right='-50px' ;
+	 
+	}
 
 
 }
