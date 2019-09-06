@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script language="javascript" type="text/javascript">
+
+var a = 'nothing';
+var b = 'nothing';
+
+function change(facsec)
+	{
+		
+		if(facsec.substring(0,3)=='fac')
+		 {
+			a = facsec; 
+		 }
+		 else
+		 {
+			b = facsec; 
+		 }
+		
+	
+		document.getElementById("content").innerHTML = a + ' | ' + b;
+	}
+
+
+
+</script>
+</head>
+
+<body>
+<table width="400" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a href="#" onclick="change('faction1');">faction1</a></td>
+    <td><a href="#" onclick="change('secret1');">secret1</a></td>
+  </tr>
+  <tr>
+    <td><a href="#" onclick="change('faction2');">faction2</a></td>
+    <td><a href="#" onclick="change('secret2');">secret2</a></td>
+  </tr>
+  <tr>
+    <td><a href="#" onclick="change('faction3');">faction3</a></td>
+    <td><a href="#" onclick="change('secret3');">secret3</a></td>
+  </tr>
+</table>
+<p>
+  div:
+<div id="content">test</div>
+</p>
+</body>
+</html>
